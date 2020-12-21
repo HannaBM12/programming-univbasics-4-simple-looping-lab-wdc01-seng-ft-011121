@@ -18,8 +18,18 @@ end
 
 def output_array(message, n)
   counter = 0
-  while counter < n do
+  while counter < message.length do
     puts message
     counter +=1
   end
+end
+
+def return_string_array(array)
+  counter = 0
+  new_array = []
+  while counter <= array.length do
+    new_array<<array[counter].to_s
+    counter +=1
+  end
+  new_array
 end
